@@ -1,16 +1,5 @@
 /*
- * main.c - Multiplicacion de matrices cuadradas
- *
- * Caracteristicas:
- *   - Matrices cuadradas de tamano N x N
- *   - Enteros positivos generados aleatoriamente
- *   - Limite de valores para evitar desborde (overflow) en la suma de productos
- *   - Reserva dinamica de memoria (malloc / free)
- *   - TODO se recibe por linea de comandos (argv), sin pedir datos por teclado
- *
- * Uso:
- *   ./matmul N [MAX_VALOR] [SEMILLA]
- *
+
  *   N         -> dimension de las matrices cuadradas (obligatorio, entero > 0)
  *   MAX_VALOR -> valor maximo (exclusivo) de cada elemento aleatorio (opcional, por defecto 10)
  *   SEMILLA   -> semilla para el generador aleatorio (opcional, por defecto: time(NULL))
