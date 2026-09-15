@@ -48,18 +48,3 @@ overflow en la suma de productos de la multiplicación.
 make clean
 ```
 
-## Subir este proyecto a GitHub
-
-1. Crea un repositorio vacío en https://github.com/new (sin README, para no tener conflictos).
-2. Desde esta carpeta, ejecuta:
-
-```bash
-git init
-git add .
-git commit -m "Multiplicacion de matrices cuadradas con memoria dinamica"
-git branch -M main
-git remote add origin https://github.com/<tu-usuario>/<tu-repo>.git
-git push -u origin main
-```
-
-Reemplaza `<tu-usuario>/<tu-repo>` por la URL real de tu repositorio.
