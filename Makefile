@@ -1,10 +1,13 @@
 CC = gcc
-CFLAGS = -Wall -Wextra -std=c11 -O2
+CFLAGS = -Wall -Wextra -O2
 
-matmul: main.c
-	$(CC) $(CFLAGS) -o matmul main.c
+all: matmul matmul_hilos
+
+matmul: matmul.c matrix_utils.c matrix_utils.h
+	$(CC) $(CFLAGS) -o matmul matmul.c matrix_utils.c
+
+matmul_hilos: matmul_hilos.c matrix_utils.c matrix_utils.h
+	$(CC) $(CFLAGS) -pthread -o matmul_hilos matmul_hilos.c matrix_utils.c -pthread
 
 clean:
-	rm -f matmul
-
-.PHONY: clean
+	rm -f matmul matmul_hilos
